@@ -1,0 +1,68 @@
+
+header {
+    border-top: 10px solid black;
+}
+header ul { /* Coloca y canvia el color del fons*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+header li { /*Coloca els li a la part esquerra*/
+    float: left;
+}
+ #titulo{ /* Estilitza i coloca el títol*/
+    float : right ;
+    margin-right: 46%;
+    color: white; /* color letra */
+    font-size: 15px;
+    text-align: center;
+    padding: 14px 0px;
+} 
+
+header li a { /*Coloca i dona estil als links*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25% 10%;
+    text-decoration: none;
+    margin-left: 20%;
+}
+
+header li a:hover { /* Canvia el color del fons quan passes per damunt*/
+    background-color: #111;
+}
+.taules main { /* Centre la taula de la pagina taules*/
+    display: block;
+    margin-left: 43%;
+}
+
+footer{ /* Selecciona footer*/
+    font-family: Arial, Helvetica, sans-serif; /* tipo de letra*/
+    font-size: 20px; /* tamaño de letra */
+    background-color: rgb(46, 46, 46); /* color del fondo */
+    border-top: 10px solid black; /* color del borde superior*/
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between; /* los cuatro anteriores lo alinean*/
+    color: white; /* color letra*/
+}
+a{text-decoration: none;} /*Quita el subrrallado a los links*/
+a:hover {color: white; font-family: arial; text-decoration: none } /*Quita que cambien de color a ponerse encima a los links*/
+a:visited {color: white; font-family: arial; text-decoration: none } /*Quita el color de cuando has visitado los links*/
+.mayusculas{ /*Selecciona la clase mayusculas, le da estilo y coloca */
+    display: block;
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+#desplegable{ /*Amaga la part del desplegable*/
+    display: none;
+    text-align: center;
+}
+#letras_des:hover > #desplegable{ /*Quan pases per damunt l'ID letras_des es mostra el deplegable*/
+    display: block;
+}
